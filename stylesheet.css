@@ -131,6 +131,10 @@ a{
   margin-left: 6%;
 }
 
+.read:hover {
+  cursor: pointer;
+}
+
 .delete  {
   font-size: 12px;
   font-weight: 400;
