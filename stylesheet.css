@@ -135,6 +135,10 @@ a{
   cursor: pointer;
 }
 
+.delete:hover {
+  cursor: pointer;
+}
+
 .delete  {
   font-size: 12px;
   font-weight: 400;
@@ -146,4 +150,14 @@ a{
   text-underline-position: under;
   float: right;
   margin-right: 6%;
+}
+
+.read-click {
+  color: #F05A28;
+  background: #F2F4F4;
+  text-decoration-color: #CFD8DC;
+}
+
+.read-click-underline {
+  text-decoration-color: #CFD8DC;
 }
