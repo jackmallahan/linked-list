@@ -1,8 +1,13 @@
+
 $('.enter-button').on('click', function(){
   console.log('Button Click')
   var websiteTitle = $('.web-title-input').val();
   var websiteURL = $('.web-url-input').val();
-  $('.new-link-container').append(`
+  // function createCard (){
+    if (websiteTitle === "" || websiteURL === ""){
+      alert('Please Input All Fields');
+    } else
+    $('.new-link-container').append(`
     <article class='link-card'>
       <h3 class='link-title'>${websiteTitle}</h3>
       <hr class='hr1'>
@@ -12,6 +17,8 @@ $('.enter-button').on('click', function(){
       <p class='delete'>Delete</p>
     </article>`)
 })
+
+
 
 $('.new-link-container').on('click', '.delete', function(){
   console.log ($('.read').parent().children());
@@ -24,7 +31,6 @@ $('.new-link-container').on('click', '.read', function(){
   $(this).parent().toggleClass('read-click');
   $(this).parent().find('.the-link').toggleClass('read-click-underline');
 })
-
 
 
 
