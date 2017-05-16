@@ -21,7 +21,7 @@ main{
   width: 100%;
   min-height: 100vh;
   display: flex;
-    background: #455A64;
+  background: #455A64;
 }
 
 .input-container  {
@@ -52,6 +52,7 @@ h1  {
   color: #FFF;
   text-align: center;
   margin-top: 100px;
+  margin-bottom: 40px;
 }
 
 .linked-list-logo {
@@ -107,10 +108,11 @@ hr  {
   width: 90%;
   height: 2px;
   color: #CFD8DC;
+  margin: auto;
 }
 
 .hr1  {
-  margin-bottom: 11px;
+  margin-bottom: 16px;
 }
 
 .hr2  {
@@ -144,15 +146,17 @@ a{
   text-underline-position: under;
   float: left;
   margin-left: 6%;
+  margin-top: 13px;
 }
 
-.read:hover {
-  cursor: pointer;
-}
-
+.the-link:hover,
+.read:hover,
 .delete:hover {
   cursor: pointer;
+  color: #455A64;
+  text-decoration-color: #FFC107;
 }
+
 
 .delete  {
   font-size: 12px;
@@ -165,6 +169,7 @@ a{
   text-underline-position: under;
   float: right;
   margin-right: 6%;
+  margin-top: 13px;
 }
 
 .read-click {
@@ -219,10 +224,18 @@ media query 720
   margin-top: 20px;
 }
 
+.outer-container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  background: #455A64;
+  flex-direction: column;
+}
 
 .input-container  {
   width: 100%;
   height: 347px;
+  min-height: 0px;
 }
 
 
