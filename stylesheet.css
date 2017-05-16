@@ -13,6 +13,7 @@ body {
 main{
   width: 100%;
   height: 100vh;
+  background: #455A64;
 }
 
 
@@ -160,6 +161,21 @@ a{
 
 .read-click-underline {
   text-decoration-color: #CFD8DC;
+}
+
+.display  {
+  display: inline;
+  color: #FFF
+}
+
+.read-display {
+  margin-left: 6%
+}
+
+.link-display {
+  margin-right: 6%;
+  float: right;
+  margin-top: 0px;
 }
 
 /***************************************

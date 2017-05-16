@@ -15,10 +15,9 @@ $('.enter-button').on('click', function(){
       <hr class='hr2'>
       <p class='read'>Read</p>
       <p class='delete'>Delete</p>
-    </article>`)
+    </article>`);
+    linksCounter();
 })
-
-
 
 $('.new-link-container').on('click', '.delete', function(){
   console.log ($('.read').parent().children());
@@ -32,6 +31,26 @@ $('.new-link-container').on('click', '.read', function(){
   $(this).parent().find('.the-link').toggleClass('read-click-underline');
 })
 
+$('.new-link-container').on('click', '.read', function()  {
+  readCounter();
+})
+
+$('.new-link-container').on('click', '.delete', function()  {
+  readCounter();
+  linksCounter();
+})
+
+function readCounter()  {
+  var readCount = $('.read-click-underline').length;
+  $('.read-display').text('Read: ' + readCount);
+  console.log(readCount);
+}
+
+function linksCounter()  {
+  var linkCount = $('.link-card').length;
+  $('.link-display').text('Links: ' + linkCount);
+  console.log(linkCount);
+}
 
 
 // $(document).ready(function(){
