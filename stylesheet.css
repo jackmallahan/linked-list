@@ -70,7 +70,7 @@ input{
   font-weight: 400;
 }
 
-.enter-button {
+button {
   width: 90%;
   height: 40px;
   color: #FFF;
@@ -84,9 +84,18 @@ input{
   border: none;
 }
 
-.enter-button:hover{
+.enter-button{
+  margin-bottom: 20px;
+}
+
+button:hover {
   background: #FFD773;
 }
+
+button:disabled {
+  background: #FFC107;
+}
+
 
 article {
   background: #FFF;

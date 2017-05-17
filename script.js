@@ -3,10 +3,9 @@ $('.enter-button').on('click', function(){
   console.log('Button Click')
   var websiteTitle = $('.web-title-input').val();
   var websiteURL = $('.web-url-input').val();
-  // function createCard (){
-    if (websiteTitle === "" || websiteURL === ""){
-      alert('Please Input All Fields');
-    } else
+    // if (websiteTitle === "" || websiteURL === ""){
+    //   $('.enter-button').prop('disabled' , 'true');
+    // } else
     $('.new-link-container').append(`
     <article class='link-card'>
       <h3 class='link-title'>${websiteTitle}</h3>
@@ -17,7 +16,20 @@ $('.enter-button').on('click', function(){
       <p class='delete'>Delete</p>
     </article>`);
     linksCounter();
+    reset();
 })
+
+$(document).on('input', function(){
+  console.log('input')
+  var websiteTitle = $('.web-title-input').val();
+  var websiteURL = $('.web-url-input').val();
+    if (websiteTitle === "" || websiteURL === ""){
+      $('.enter-button').prop('disabled', true)
+    } else {$('.enter-button').prop('disabled', false)
+  }
+})
+
+
 
 $('.new-link-container').on('click', '.delete', function(){
   console.log ($('.read').parent().children());
@@ -43,6 +55,9 @@ $('.new-link-container').on('click', '.delete', function()  {
 function readCounter()  {
   var readCount = $('.read-click-underline').length;
   $('.read-display').text('Read: ' + readCount);
+  if (readCount > 0){
+    $('.clear-button').prop('disabled', false);
+  }
   console.log(readCount);
 }
 
@@ -52,7 +67,18 @@ function linksCounter()  {
   console.log(linkCount);
 }
 
+function reset(){
+  $('.web-title-input').val('');
+  $('.web-url-input').val('');
+  $('.enter-button').prop('disabled', true);
+}
 
+
+$('.clear-button').on('click', function (){
+  console.log('clear')
+  $('.clear-button').prop('disabled', true);
+  $('.read-click-underline').closest('article').remove()
+})
 // $(document).ready(function(){
 //   console.log('working')
 // })
