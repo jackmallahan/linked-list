@@ -5,13 +5,11 @@
 // enter button enable on input
 $(document).on('input', function() {
   enableEnterButton();
-})
+  })
 
 // enter button
 $('.enter-button').on('click', function() {
-  buildNewCard();
-  linksCounter();
-  reset();
+  isUrlValid();
 })
 
 // delete link card update counters
@@ -45,9 +43,8 @@ function enableEnterButton()  {
   var websiteURL = $('.web-url-input').val();
     if (websiteTitle === "" || websiteURL === "") {
       $('.enter-button').prop('disabled', true)
-  }
-    else {$('.enter-button').prop('disabled', false)
-  }
+  } else {$('.enter-button').prop('disabled', false)
+}
 }
 
 //  build new card
@@ -92,4 +89,19 @@ function removeReadLinkCards()  {
   $('.clear-button').prop('disabled', true);
   $('.read-click-underline').closest('article').remove();
   $('.links-display').text('0');
+}
+
+// URL Verifier
+function isUrlValid() {
+    var userInput = $('.web-url-input').val()
+    var regexQuery = "^(https?://)?(www\\.)?([-a-z0-9]{1,63}\\.)*?[a-z0-9][-a-z0-9]{0,61}[a-z0-9]\\.[a-z]{2,6}(/[-\\w@\\+\\.~#\\?&/=%]*)?$";
+    var url = new RegExp(regexQuery,"i");
+    if (url.test(userInput)) {
+      buildNewCard();
+      linksCounter();
+      reset();
+    }
+    else {alert('invalid url: ' + userInput);
+    return false;
+  }
 }
