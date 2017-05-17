@@ -65,7 +65,7 @@ function buildNewCard() {
 // reset inputs and enter button disable
 function reset(){
   $('.web-title-input').val('');
-  $('.web-url-input').val('');
+  $('.web-url-input').val('https://');
   $('.enter-button').prop('disabled', true);
 }
 
