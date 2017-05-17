@@ -77,7 +77,11 @@ function reset(){
 $('.clear-button').on('click', function (){
   console.log('clear')
   $('.clear-button').prop('disabled', true);
-  $('.read-click-underline').closest('article').remove()
+  $('.read-click-underline').closest('article').remove();
+  $('.links-display').text('0');
+  linksCounter();
+  readCounter();
+
 })
 // $(document).ready(function(){
 //   console.log('working')
