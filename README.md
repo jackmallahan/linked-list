@@ -5,8 +5,8 @@ This is a website to organize articles.
 ## Usage
 
 ##### To Save a Link
- 1. Input the website title in top input field **Required**.
- 2. Input the website's *valid* URL following the prepopulated "https://"
+ 1. Input the website title in top input field. This is **Required**.
+ 2. Input the website's *valid* URL following the prepopulated "https://" This is **Required**.
  3. Click Enter to save the link as a new bookmark.
  4. Restart process to add more bookmarks.
 
