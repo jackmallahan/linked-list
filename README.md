@@ -4,13 +4,13 @@ This is a website to organize articles.
 
 ## Usage
 
-#####To Save a Link
+##### To Save a Link
  1. Input the website title in top input field **Required**.
  2. Input the website's *valid* URL following the prepopulated "https://"
  3. Click Enter to save the link as a new bookmark.
  4. Restart process to add more bookmarks.
 
-#####To Organize Links
+##### To Organize Links
  1. To mark a bookmark as already read, click 'read'
  2. To delete a bookmark, click 'delete'
  3. To delete all read bookmarks, click 'Clear Read Bookmarks'
