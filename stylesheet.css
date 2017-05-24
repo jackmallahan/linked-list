@@ -201,13 +201,13 @@ media query 900
 
 @media screen and (max-width: 900px) {
 
-h1  {
-  font-size: 46px;
-}
+  h1  {
+    font-size: 46px;
+  }
 
-.linked-list-logo {
-  width: 65px;
-}
+  .linked-list-logo {
+    width: 65px;
+  }
 
 }
 
