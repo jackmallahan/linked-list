@@ -1,0 +1,161 @@
+*{
+  box-sizing: border-box;
+}
+
+body, html, section, main, div, aside {
+  font-family: 'Roboto Slab', serif;
+  font-family: 'Open Sans', sans-serif;
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+}
+
+h1{
+  background-color: #E5F3F2;
+  color: #00A79D;
+  flex-direction: column;
+  text-align: center;
+  font-family: 'roboto slab';
+  font-weight:700;
+  font-size: 48px;
+  margin-bottom: 0;
+  margin-top: 0;
+  padding: 30px 0;
+}
+
+h2 {
+  width: 80%;
+}
+
+span {
+  color: #6D6E71;
+  font-family: 'roboto slab';
+  font-weight:700;
+}
+
+.top-section {
+  background-color: #E5F3F2;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 300px;
+}
+
+.input {
+  border: solid 2px #D1D3D4;
+  display: block;
+  margin: 0px auto 20px;
+  padding-left:5px;
+  height: 40px;
+  width: 75%;
+}
+
+.web-inputs::-webkit-input-placeholder {
+  color: #D1D3D4;
+}
+
+.save-button {
+  background-color: #00A79D;
+  border: none;
+  color: #FFFFFF;
+  font-size: 22px;
+}
+
+.save-button:hover {
+  background-color: #045E55;
+}
+
+.search-box {
+  margin-top: 25px;
+}
+
+.idea-card {
+  border-bottom: solid 2px #D1D3D4;
+  margin: auto;
+  width: 75%;
+}
+
+.idea-card-header {
+  color: #6D6E71;
+  font-family: 'roboto slab';
+}
+
+.idea-name-section {
+  display: flex;
+  justify-content: space-between;
+}
+
+.delete-button {
+  background: none;
+  background-image: url(assets/delete.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  border: none;
+  margin-top: 18px;
+  height: 30px;
+  width: 30px;
+}
+
+.delete-button:hover {
+  background-image: url(assets/delete-hover.svg);
+}
+
+.article-text-container {
+  color: #939598;
+  font-size: 18px;
+  width: 75%;
+}
+
+.quality-control-container {
+  color:  #6D6E71;
+  display: flex;
+  font-size: 18px;
+  justify-content: flex-start;
+}
+
+.upvote-button {
+  background: none;
+  background-image: url(assets/upvote.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  border: none;
+  margin-right: 25px;
+  margin-top: 18px;
+  height: 30px;
+  width: 30px;
+}
+
+.upvote-button:hover{
+  background-image: url(assets/upvote-hover.svg);
+}
+
+.downvote-button {
+  background: none;
+  background-image: url(assets/downvote.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  border: none;
+  margin-right: 25px;
+  margin-top: 18px;
+  height: 30px;
+  width: 30px;
+}
+
+.downvote-button:hover {
+  background-image: url(assets/downvote-hover.svg);
+}
+
+@media (max-width: 375px){
+
+  .article-text-container {
+    font-size: 14px;
+
+  }
+
+
+}
