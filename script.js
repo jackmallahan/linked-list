@@ -51,15 +51,15 @@ function enableEnterButton()  {
 function buildNewCard() {
   var websiteTitle = $('.web-title-input').val();
   var websiteURL = $('.web-url-input').val();
-    $('.new-link-container').append(`
-    <article class='link-card'>
-      <h3 class='link-title'>${websiteTitle}</h3>
-      <hr class='hr1'>
-      <a class='the-link' href='${websiteURL}'>${websiteURL}</a>
-      <hr class='hr2'>
-      <p class='read'>Read</p>
-      <p class='delete'>Delete</p>
-    </article>`);
+  $('.new-link-container').append(`
+  <article class='link-card'>
+    <h3 class='link-title'>${websiteTitle}</h3>
+    <hr class='hr1'>
+    <a class='the-link' href='www.thewebsiteurl.com'>${websiteURL}</a>
+    <hr class='hr2'>
+    <p class='read'>Read</p>
+    <p class='delete'>Delete</p>
+  </article>`);
 }
 
 // reset inputs and enter button disable
@@ -103,6 +103,5 @@ function isUrlValid() {
     }
     else {alert('invalid url: ' + userInput);
     return false;
-    reset();
   }
 }
